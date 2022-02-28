@@ -1,3 +1,7 @@
+"""Code that allows you to put your child in a daycare
+Jamie Yang, finished 28/02/2022"""
+
+
 def main():
     choice = 0
     while choice != 5:
