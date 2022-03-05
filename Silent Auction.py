@@ -18,12 +18,13 @@ def start_auction():
     bid = int(input("What is your bid?: "))
     bids_so_far.append(bid)
     print(f"The highest bid so far is ${max(bids_so_far)}")
-    if bid < max(bids_so_far):
+    if bid == -1:
+        print(f"The auction for the {item_sold} finished with a bid of {max(bids_so_far)}. The reserve price was"
+              f" {reserve_price}")
+        quit()
+    elif bid < max(bids_so_far):
         print("Please enter a higher bid.")
         start_auction()
-    elif bid == "-1":
-        print(f"The auction for the {item_sold} finished with a bid of {max(bids_so_far)}. The reserve price was"
-              f"{reserve_price}")
     else:
         start_auction()
 
