@@ -32,4 +32,4 @@ def start_auction():
 # main
 bids_so_far = []
 main()
-"""Please send help I have no idea how to stop the auction"""
+
